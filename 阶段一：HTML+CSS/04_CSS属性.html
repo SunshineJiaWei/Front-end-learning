@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重拾前端day04</title>
+  <style>
+    body {
+      /* font-family设置字体 */
+      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    }
+
+    .info {
+      /* 每个单词首字符大写 */
+      /* text-transform: capitalize; */
+      /* 单词全大写 */
+      text-transform: uppercase;
+      /* 单词全小写 */
+      /* text-transform: lowercase; */
+
+      /* 首行缩进 */
+      text-indent: 2em;
+
+      /* 字母间距 */
+      /* letter-spacing: 10px; */
+      /* 单词间距 */
+      word-spacing: 10px;
+
+      /* font-weight字体加粗 */
+      /* normal=400 bold=700 */
+      font-weight: 700;
+    }
+
+    .box1 {
+      /* test-align: 文本对齐方式 */
+      text-align: center;
+      background: #F00;
+      height: 100px;
+      line-height: 100px;
+
+      /* 字体属性缩写 */
+      /* font-style font-variant font-weight font-size/line-height font-family */
+      /* 前三个属性可以任意顺序或着省略 */
+      /* /line-height可以省略，不省略必须在font-size后面 */
+      /* font-size font-family不可以省略，不可以顺序 */
+      font: small-caps italic 700 30px/100px serif;
+    }
+
+    /* 动态伪类 */
+    /* a链接未被访问过 */
+    a:link {
+      color: red;
+    }
+
+    /* a链接被访问过了 */
+    a:visited {
+      color: green;
+    }
+
+    /* a/input元素聚焦 */
+    a:focus {
+      color: yellow;
+    }
+
+    /* a元素鼠标悬停在上面 */
+    a:hover {
+      color: blue;
+    }
+
+    /* 鼠标点击了，但还没松手 */
+    a:active {
+      color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- a标签默认自带text-decoration -->
+  <a href="http://www.baidu.com" target="_blank">百度一下</a>
+  <span style="text-decoration: underline;">百度一下</span>
+  <span style="text-decoration: line-through">Google</span>
+  <span style="text-decoration: overline;">Bing</span>
+  <a href="" style="text-decoration: none;">淘宝一下</a>
+
+  <p class="info">my identity is a coder</p>
+
+  <div class="box1">
+    我是div元素
+  </div>
+
+  <a href="http://www.baidu.com">学习伪类</a>
+
+
+</body>
+
+</html>
